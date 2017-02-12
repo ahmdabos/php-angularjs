@@ -5,11 +5,10 @@ app.factory('Data', function($http, $q, Config) {
 			return $http.get(Config.URL+url)
 			.then(function (response) {
 					deferred.resolve(response.data);
-					return deferred.promise;
 				}, function (response) {
 					deferred.reject(response);
-					return deferred.promise;
 				});
+			return deferred.promise;
 		},
 		send: function(data, url){
 			var deferred = $q.defer();
@@ -20,13 +19,10 @@ app.factory('Data', function($http, $q, Config) {
             })
             .then(function (response) {
 				deferred.resolve(response);
-					return deferred.promise;
-
 				}, function (response) {
 					deferred.reject(response);
-					return deferred.promise;
 				});
-       
+			return deferred.promise;
       }
 	}
 });
