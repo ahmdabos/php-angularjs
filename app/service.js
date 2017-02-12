@@ -1,8 +1,9 @@
 app.factory('Data', function($http, $q, Config) {
     return{
+		
 		get : function (url) {
 			var deferred = $q.defer();
-			return $http.get(Config.URL+url)
+			$http.get(Config.URL+url)
 			.then(function (response) {
 					deferred.resolve(response.data);
 				}, function (response) {
@@ -10,9 +11,10 @@ app.factory('Data', function($http, $q, Config) {
 				});
 			return deferred.promise;
 		},
+		
 		send: function(data, url){
 			var deferred = $q.defer();
-           return $http({
+            $http({
               method: 'POST',
               url: Config.URL+url,
               data: data
@@ -22,8 +24,10 @@ app.factory('Data', function($http, $q, Config) {
 				}, function (response) {
 					deferred.reject(response);
 				});
-			return deferred.promise;
+		return deferred.promise;
       }
+	  
+	  
 	}
 });
 

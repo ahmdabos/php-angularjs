@@ -1,0 +1,16 @@
+// Components
+@import "components/_fonts.scss"; 
+@import "components/_normalize.scss"; 
+@import "components/_typography.scss";
+@import "components/_variables.scss";   
+@import "components/_mixins.scss";
+@import "components/_sprites.scss";  
+@import "components/_buttons.scss"; 
+@import "components/_forms.scss";  
+@import "components/_scaff.scss";  
+// Pages 
+@import "pages/_home.scss";
+ 
+// Responsive
+@import "_responsive.scss";
+ 

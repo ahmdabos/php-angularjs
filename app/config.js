@@ -1,3 +1,3 @@
 app.constant('Config', {
-  URL: 'http://localhost/phpangular/api/'
+  URL: 'http://localhost/php-angularjs/admin/api/'
 });
