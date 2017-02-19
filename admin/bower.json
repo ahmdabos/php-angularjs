@@ -1,0 +1,23 @@
+{
+  "name": "angularjs-sass",
+  "description": "",
+  "main": "gulpfile.js",
+  "authors": [
+    "ahmd abos <ahmdabos@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "js/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "requirejs": "^2.3.2",
+    "angular": "angularjs#^1.5.8",
+    "angular-ui-router": "^0.3.2"
+  }
+}
